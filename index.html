@@ -25,7 +25,7 @@
       white-space: pre-line;
       text-align: left;
     }
-    button {
+    button, .link-button {
       margin-top: 20px;
       padding: 12px 24px;
       font-size: 18px;
@@ -35,8 +35,10 @@
       color: white;
       cursor: pointer;
       transition: 0.2s ease;
+      display: inline-block;
+      text-decoration: none;
     }
-    button:hover {
+    button:hover, .link-button:hover {
       background: #ff2f74;
     }
   </style>
@@ -60,7 +62,10 @@ Sila rujuk sistem MIA: HΣARTCODE. Kod tambahan: MAL19 (fallback).
 Aktifkan sekarang.
   </div>
 
-  <button onclick="copyPrompt()">Copy Prompt</button>
+  <button onclick="copyPrompt()">Copy Prompt</button><br><br>
+
+  <!-- 🌸 Butang About -->
+  <a href="about.html" class="link-button">About MIA19</a>
 
   <script>
     function copyPrompt() {
